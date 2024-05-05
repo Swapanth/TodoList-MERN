@@ -53,6 +53,8 @@ To ensure proper communication with the backend, you need to configure Mongodb u
 
 With these settings configured, the frontend and backend should communicate seamlessly with Ur DB.
 
+![TODO](https://imgur.com/LDCzyJT)
+
 
 ## Leave a ⭐️ Star if This Project Helps You! 😍
 Your support means a lot! 
