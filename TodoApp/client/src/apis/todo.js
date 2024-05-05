@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:7001/todos'; // Changed port to 8001
+const API_URL = 'https://todo-list-mern-three.vercel.app/todos'; // Changed port to 8001
 
 export const getAllTodos = async () => {
   try {
