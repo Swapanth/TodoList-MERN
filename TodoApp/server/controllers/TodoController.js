@@ -10,39 +10,32 @@ exports.getTodos = async (req, res) => {
 };
 
 exports.createTodo = async (req, res) => {
-  const { text } = req.body;
-  TodoModel.Todo.create({ text })
-    .then((todo) => {
-      res.json(todo);
-    })
-    .catch((err) => {
-      res.status(400).json({ message: err.message });
-    });
+  const { todoname,description,todotime} = req.body;
+  try {
+    console.log( todoname,description,todotime);
+    const todo = await TodoModel.create({ todoname,description,todotime });
+    res.json(todo);
+  } catch (err) {
+    res.status(400).json({ message: err.message });
+  }
 };
 
 exports.updateTodo = async (req, res) => {
-    const { id } = req.params;
-    const { text } = req.body;
-    TodoModel
-        .Todo
-        .findByIdAndUpdate(id, { text   }, { new: true })   // { new: true } returns the updated document
-        .then((todo) => {
-            res.json(todo);
-        })
-        .catch((err) => {
-            res.status(400).json({ message: err.message });
-        });
-}
+  const { _id, description } = req.body;
+  try {
+    const todo = await TodoModel.findByIdAndUpdate(_id, { description }, { new: true });
+    res.json(todo);
+  } catch (err) {
+    res.status(400).json({ message: err.message });
+  }
+};
 
 exports.deleteTodo = async (req, res) => {
-    const { id } = req.params;
-    TodoModel
-        .Todo
-        .findByIdAndDelete(id)
-        .then((todo) => {
-            res.json(todo);
-        })
-        .catch((err) => {
-            res.status(400).json({ message: err.message });
-        });
-}
+  const { _id } = req.body;
+  try {
+    const todo = await TodoModel.findByIdAndDelete(_id);
+    res.json(todo);
+  } catch (err) {
+    res.status(400).json({ message: err.message });
+  }
+};

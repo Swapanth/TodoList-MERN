@@ -1,0 +1,217 @@
+body {
+    background-color: #222;
+    color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .todo-app {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #f0f0f0;
+  }
+  
+  .add-button {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  .addingtodo {
+    background-color: #09ff00;
+    color: #000000;
+    border: none;
+    border-radius:5px;
+  }
+
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .modal input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: -6px;
+    border: none;
+    border-radius: 4px;
+    background-color: #444;
+    color: #f0f0f0;
+  }
+  
+  .modal button {
+    background-color: #555;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .todo-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .todo-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .todo-details {
+    flex-grow: 1;
+  }
+  
+  .description {
+    color: #aaa;
+  }
+  
+  .date {
+    color: #888;
+    font-size: 12px;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .edit-button {
+    background-color: #fffb00;
+    color: #000000;
+    border: none;
+    border-radius:5px;
+  }
+
+
+
+  
+  .delete-button {
+    background-color: #ff0101;
+    color: #000000;
+    border: none;
+    border-radius:5px;
+  }
+
+
+  body {
+    background-color: #222;
+    color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .todo-app {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #f0f0f0;
+  }
+  
+  .add-button {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  .add-button button {
+    background-color: #333;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .modal-header h2 {
+    margin: 0;
+  }
+  
+  .modal-header button {
+    background-color: transparent;
+    color: #f0f0f0;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .modal input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #444;
+    color: #f0f0f0;
+  }
+  
+  .modal button {
+    background-color: #555;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px
+  }

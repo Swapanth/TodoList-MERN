@@ -23,7 +23,7 @@ npm install
 4. Start the backend server:
 
 ```bash
-npm run dev
+npm start
 ```
 
 The client server will be accessible at `http://localhost:7001`.
